@@ -1,0 +1,22 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { font-family: "PingFang SC" ,"Microsoft YaHei" , Helvetica, Arial ,Verdana , sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal; }
+a { color:#666; text-decoration:none; }
+a:hover { text-decoration:none; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font-size:12px; }
+span:active,li:active,input:active, textarea:active, select:active, button:active,span:focus,li:focus,input:focus, textarea:focus, select:focus, button:focus,a:focus,a:active{  outline: none;  }
+button[disabled = 'disabled'] { cursor: not-allowed;}
+table { border-collapse:collapse; }
+html { overflow-y: auto; }
+html,body{ width:100%;height:100%; }
+label{ font-weight: normal; }
+*, .border-box, :after, :before {
+    -webkit-sizing: content-box;
+    -moz-sizing: content-box;
+    -ms-sizing: content-box;
+    -o-sizing: content-box;
+    box-sizing: content-box;
+}
