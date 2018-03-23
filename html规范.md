@@ -25,7 +25,6 @@ good code
 <meta charset="utf-8">
 <title>Test</title>
 <article>This is only a test.</article>
-
 ```
 
 ### 3.省略可选标签
