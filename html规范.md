@@ -1,6 +1,6 @@
 ### 1.文档类型
 
-推荐使用 HTML5 的文档类型申明： <!DOCTYPE html>.
+推荐使用 HTML5 的文档类型申明： &lt;!DOCTYPE html&gt;。
 
 （建议使用 text/html 格式的 HTML。避免使用 XHTML。XHTML 以及它的属性，比如  application/xhtml+xml 在浏览器中的应用支持与优化空间都十分有限）。
 
