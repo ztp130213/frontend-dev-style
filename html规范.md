@@ -77,15 +77,12 @@ HTML5 规范中规定了 HTML 标签是可以省略的。但从可读性来说�
 
 有根据有目的地使用 HTML 元素，对于可访问性、代码重用、代码效率来说意义重大。
 
-bad code
-```
 有根据有目的地使用 HTML 元素，对于可访问性、代码重用、代码效率来说意义重大。
 
 以下示例列出了一些的语义化 HTML 主要情况：
 
-不推荐
-
-html 代码:
+bad code
+```
 <b>My page title</b>
 <div class="top-navigation">
   <div class="nav-item"><a href="#home">Home</a></div>
