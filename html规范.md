@@ -4,7 +4,7 @@
 
 （建议使用 text/html 格式的 HTML。避免使用 XHTML。XHTML 以及它的属性，比如  application/xhtml+xml 在浏览器中的应用支持与优化空间都十分有限）。
 
-HTML 中最好不要将无内容元素(area, base, br, col, command, embed, hr, img,  input, keygen, link, meta, param, source, track, wbr)的标签闭合，例如：使用 <br> 而非 <br />.
+HTML 中最好不要将无内容元素(area, base, br, col, command, embed, hr, img,  input, keygen, link, meta, param, source, track, wbr)的标签闭合，例如：使用 &lt;br&gt; 而非 &lt;br /&gt;.
 
 ### 2.HTML验证
 
@@ -36,9 +36,9 @@ HTML5 规范中规定了 HTML 标签是可以省略的。但从可读性来说�
 
 ### 4.脚本加载
 
-出于性能考虑，脚本异步加载很关键。一段脚本放置在 <head> 内，比如  <script src="main.js"></script>，其加载会一直阻塞 DOM 解析，直至它完全地加载和执行完毕。这会造成页面显示的延迟。特别是一些重量级的脚本，对用户体验来说那真是一个巨大的影响。
+出于性能考虑，脚本异步加载很关键。一段脚本放置在 &lt;head&gt; 内，比如  &lt;script src="main.js"&gt;&lt;/script&gt;，其加载会一直阻塞 DOM 解析，直至它完全地加载和执行完毕。这会造成页面显示的延迟。特别是一些重量级的脚本，对用户体验来说那真是一个巨大的影响。
 
-异步加载脚本可缓解这种性能影响。如果只需兼容 IE10+，可将 HTML5 的 async 属性加至脚本中，它可防止阻塞 DOM 的解析，甚至你可以将脚本引用写在 <head> 里也没有影响。
+异步加载脚本可缓解这种性能影响。如果只需兼容 IE10+，可将 HTML5 的 async 属性加至脚本中，它可防止阻塞 DOM 的解析，甚至你可以将脚本引用写在 &lt;head&gt; 里也没有影响。
 
 如需兼容老旧的浏览器，实践表明可使用用来动态注入脚本的脚本加载器。你可以考虑 yepnope 或 labjs。注入脚本的一个问题是：一直要等到 CSS 对象文档已就绪，它们才开始加载（短暂地在 CSS 加载完毕之后），这就对需要及时触发的 JS 造成了一定的延迟，这多多少少也影响了用户体验吧。
 
@@ -213,16 +213,7 @@ good code
 <img src="huge-spaceship-approaching-earth.jpg" alt="A huge spaceship that is approaching the earth">
 ```
 
-### 7.关注点分离
-
-bad code
-```
-```
-good code
-```
-```
-
-### 8.HTML内容至上
+### 7.HTML内容至上
 
 不要让非内容信息污染了你的 HTML。现在貌似有一种倾向：通过 HTML 来解决设计问题，这是显然是不对的。HTML 就应该只关注内容。
 
@@ -294,7 +285,7 @@ good code
 }
 ```
 
-### 9.Type属性
+### 8.Type属性
 
 省略样式表与脚本上的 type 属性。鉴于 HTML5 中以上两者默认的 type 值就是 text/css 和 text/javascript，所以 type 属性一般是可以忽略掉的。甚至在老旧版本的浏览器中这么做也是安全可靠的。
 
@@ -309,7 +300,7 @@ good code
 <script src="main.js"></script>
 ```
 
-### 10.可用性
+### 9.可用性
 
 如果 HTML5 语义化标签使用得当，许多可用性问题已经引刃而解。ARIA 规则在一些语义化的元素上可为其添上默认的可用性角色属性，使用得当的话已使网站的可用性大部分成立。假如你使用 nav,  aside, main, footer 等元素，ARIA 规则会在其上应用一些关联的默认值。
 
@@ -317,13 +308,13 @@ good code
 
 另外一些角色属性则能够用来呈现更多可用性情景（i.e. role="tab"）。
 
-### 11.Tab Index在可用性上的运用
+### 10.Tab Index在可用性上的运用
 
 检查文档中的 tab 切换顺序并传值给元素上的 tabindex，这可以依据元素的重要性来重新排列其 tab 切换顺序。你可以设置 tabindex="-1" 在任何元素上来禁用其 tab 切换。
 
 当你在一个默认不可聚焦的元素上增加了功能，你应该总是为其加上 tabindex 属性使其变为可聚焦状态，而且这也会激活其 CSS 的伪类 :focus。选择合适的 tabindex 值，或是直接使用  tabindex="0" 将元素们组织成同一 tab 顺序水平，并强制干预其自然阅读顺序。
 
-### 12.微格式在SEO和可用性上的运用
+### 11.微格式在SEO和可用性上的运用
 
 如果 SEO 和可用性环境条件允许的话，建议考虑采用微格式。微格式是通过在元素标签上申明一系列特定数据来达成特定语义的方法。
 
@@ -355,7 +346,7 @@ good code
 
 ```
 
-### 13.格式化规则
+### 12.格式化规则
 
 在每一个块状元素，列表元素和表格元素后，加上一新空白行，并对其子孙元素进行缩进。内联元素写在一行内，块状元素还有列表和表格要另起一行。
 
@@ -389,9 +380,9 @@ good code
 </table>
 ```
 
-### 14.HTML 引号
+### 13.HTML 引号
 
-使用双引号(“”) 而不是单引号(”) 。
+使用双引号("") 而不是单引号('') 。
 
 bad code
 ```
